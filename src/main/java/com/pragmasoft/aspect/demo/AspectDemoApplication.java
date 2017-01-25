@@ -5,12 +5,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.EnableLoadTimeWeaving;
-import org.springframework.context.annotation.EnableLoadTimeWeaving.AspectJWeaving;
 import org.springframework.context.annotation.aspectj.EnableSpringConfigured;
 
 @SpringBootApplication
 @EnableSpringConfigured
-@EnableLoadTimeWeaving(aspectjWeaving=AspectJWeaving.AUTODETECT)
+//@EnableLoadTimeWeaving
 public class AspectDemoApplication {
 
 	static Logger log = LoggerFactory.getLogger(AspectDemoApplication.class);
